@@ -10,7 +10,7 @@ on:
     branches: 
       - main
       - 'activity/**'
-    path-ignore:
+    paths-ignore:
       - '.github/workflows/*' # ignore worfklow files
 jobs:
   deploy:
