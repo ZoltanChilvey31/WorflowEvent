@@ -11,7 +11,7 @@ on:
       - main
       - 'activity/**'
     path-ignore:
-      -'.github/workflows/**' # ignore worfklow files
+      -'.github/workflows/*' # ignore worfklow files
 jobs:
   deploy:
     runs-on: ubuntu-latest
