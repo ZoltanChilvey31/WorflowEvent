@@ -2,14 +2,16 @@ name: Events Demo 1
 on: 
   pull_request:
     types: opened
-       branches: 
-        - dev
-        - 'activity/**'
+        branches: 
+          - dev
+          - 'activity/**'
   workflow_dispatch:
   push:
     branches: 
       - main
       - 'activity/**'
+    path-ignore:
+      -'.github/worflows/**' # ignore worfklow files
 jobs:
   deploy:
     runs-on: ubuntu-latest
